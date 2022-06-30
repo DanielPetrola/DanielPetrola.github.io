@@ -20,7 +20,7 @@ function scrollIntro() {
   var introRight = document.querySelector(".intro-right");
   var headTextPosition = headText.getBoundingClientRect().top;
   if(screen.width < 1000){
-    var screenPosition = 9999;
+    var screenPosition = headTextPosition + 1;
   }else{
   screenPosition = window.innerHeight / 2.4};
 
@@ -41,7 +41,7 @@ function scrollDetails() {
   var DetailsRight = document.querySelector(".details-right");
   var headTextDetailsPosition = headTextDetails.getBoundingClientRect().top;
   if(screen.width < 1000){
-    var screenDetailsPosition = 99999;
+    var screenDetailsPosition = headTextDetailsPosition + 1;
   }else{
   screenDetailsPosition = window.innerHeight / 2.4;}
 
@@ -62,7 +62,7 @@ function scrollSkills() {
   var skillsRight = document.querySelector(".skills-right");
   var headTextSkillsPosition = headTextSkills.getBoundingClientRect().top;
   if(screen.width < 1000){
-    var screenSkillsPosition = 99999;
+    var screenSkillsPosition = headTextSkillsPosition + 1;
   }else{
   screenSkillsPosition = window.innerHeight / 2.4;}
 
@@ -84,7 +84,7 @@ function scrollProjects() {
   var contactLeft = document.querySelector(".contact-left");
   var headTextprojectsPosition = headTextprojects.getBoundingClientRect().top;
   if(screen.width < 1000){
-    var screenProjectsPosition = 99999;
+    var screenProjectsPosition = headTextprojectsPosition+ 1;
   }else{
   screenProjectsPosition = window.innerHeight / 2.4;}
 
