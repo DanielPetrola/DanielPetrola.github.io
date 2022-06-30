@@ -295,3 +295,8 @@ progress[value]::-webkit-progress-value {
     position: fixed;
     transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
   }
+
+//test overflow hidden on header
+.hidden{
+  overflow: hidden;
+}
