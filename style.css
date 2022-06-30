@@ -126,10 +126,10 @@ progress[value]::-webkit-progress-value {
 }
 
 .indent > span {
-  margin-left: 50px;
+  margin-left: 10px;
 }
 .indent > p {
-  text-indent: 30px;
+  text-indent: 20px;
 }
 .small-box {
   width: 10%;
