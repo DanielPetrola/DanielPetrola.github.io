@@ -35,7 +35,8 @@ p {
   top: 10px !important;
 }
 .nav-links {
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   top: 0;
   z-index: 5;
 }
@@ -291,10 +292,7 @@ progress[value]::-webkit-progress-value {
     transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
   }
 
-<<<<<<< HEAD
 /* test overflow hidden on header */
-=======
->>>>>>> 3d328cb2e0679d734910ff1cab8443c486dc8c61
 .hidden{
   overflow: hidden;
 }
