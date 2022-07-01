@@ -13,13 +13,15 @@ window.addEventListener("scroll", function () {
 });
 
 // scroll details animation
+//if on mobile device
+
 
 function scrollIntro() {
   var headText = document.querySelector(".head-text-intro");
   var introLeft = document.querySelector(".intro-left");
   var introRight = document.querySelector(".intro-right");
   var headTextPosition = headText.getBoundingClientRect().top;
-  if(screen.width < 1000){
+  if(window.innerWidth < 1000){
     var screenPosition = headTextPosition + 1;
   }else{
   screenPosition = window.innerHeight / 2.4};
@@ -40,7 +42,7 @@ function scrollDetails() {
   var detailsLeft = document.querySelector(".details-left");
   var DetailsRight = document.querySelector(".details-right");
   var headTextDetailsPosition = headTextDetails.getBoundingClientRect().top;
-  if(screen.width < 1000){
+  if(window.innerWidth < 1000){
     var screenDetailsPosition = headTextDetailsPosition + 1;
   }else{
   screenDetailsPosition = window.innerHeight / 2.4;}
@@ -61,7 +63,7 @@ function scrollSkills() {
   var skillsLeft = document.querySelector(".skills-left");
   var skillsRight = document.querySelector(".skills-right");
   var headTextSkillsPosition = headTextSkills.getBoundingClientRect().top;
-  if(screen.width < 1000){
+  if(window.innerWidth < 1000){
     var screenSkillsPosition = headTextSkillsPosition + 1;
   }else{
   screenSkillsPosition = window.innerHeight / 2.4;}
@@ -83,7 +85,7 @@ function scrollProjects() {
   var projectsRight = document.querySelector(".projects-right");
   var contactLeft = document.querySelector(".contact-left");
   var headTextprojectsPosition = headTextprojects.getBoundingClientRect().top;
-  if(screen.width < 1000){
+  if(window.innerWidth < 1000){
     var screenProjectsPosition = headTextprojectsPosition+ 1;
   }else{
   screenProjectsPosition = window.innerHeight / 2.4;}
