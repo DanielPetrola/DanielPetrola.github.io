@@ -35,8 +35,7 @@ p {
   top: 10px !important;
 }
 .nav-links {
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 5;
 }
