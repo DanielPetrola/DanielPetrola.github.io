@@ -139,7 +139,7 @@ progress[value]::-webkit-progress-value {
  /* intro */
  .intro{
   opacity: 0;
-  transition-delay: 2s;
+  transition-delay: 1s;
   transition: all 1s ease;
  }
  .intro-appear{
