@@ -137,6 +137,14 @@ progress[value]::-webkit-progress-value {
 }
  /* for scroll animations */
  /* intro */
+ .intro{
+  opacity: 0;
+  transition-delay: 2s;
+  transition: all 1s ease;
+ }
+ .intro-appear{
+  opacity: 1;
+ }
  .head-text-intro {
      opacity: 0;
      transform: translateY(-50px);

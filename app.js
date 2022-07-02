@@ -5,11 +5,11 @@ const petrola = document.getElementById("petrola");
 window.addEventListener("scroll", function () {
   let offset = window.pageYOffset;
   john.style.transform =
-    "translate(" + offset * 0.3 + "px, -" + offset * 0.05 + "px)";
+    "translate(" + offset * 0.5 + "px, -" + offset * 0 + "px)";
   daniel.style.transform =
-    "translate(-" + offset * 0.4 + "px, -" + offset * 0.25 + "px)";
+    "translate(-" + offset * 0.1 + "px, -" + offset * 0.1 + "px)";
   petrola.style.transform =
-    "translate(" + offset * 0.5 + "px, -" + offset * 0.5 + "px)";
+    "translate(" + offset * 0.7 + "px, -" + offset * 0.2 + "px)";
 });
 
 // scroll details animation
@@ -20,17 +20,20 @@ function scrollIntro() {
   var headText = document.querySelector(".head-text-intro");
   var introLeft = document.querySelector(".intro-left");
   var introRight = document.querySelector(".intro-right");
+  var introBody = document.querySelector(".intro");
   var headTextPosition = headText.getBoundingClientRect().top;
   if(window.innerWidth < 1000){
     var screenPosition = headTextPosition + 1;
   }else{
-  screenPosition = window.innerHeight / 2.4};
+  screenPosition = window.innerHeight / 10};
 
   if (headTextPosition < screenPosition) {
+    introBody.classList.add("intro-appear");
     headText.classList.add("head-text-appear");
     introLeft.classList.add("intro-left-appear");
     introRight.classList.add("intro-right-appear");
   } else {
+    introBody.classList.remove("intro-appear");
     headText.classList.remove("head-text-appear");
     introLeft.classList.remove("intro-left-appear");
     introRight.classList.remove("intro-right-appear");
