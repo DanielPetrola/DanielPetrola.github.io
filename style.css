@@ -147,85 +147,81 @@ progress[value]::-webkit-progress-value {
      transform: translatey(0px);
  }
  .intro-left {
-     transform: translatex(-50%);
+     transform: translateY(25%);
      opacity: 0;
      transition: all 0.5s ease-in-out;
  }
  .intro-left-appear {
-     transform: translatex(0);
+     transform: translateY(0);
      opacity: 1;
  }
  .intro-right {
-     transform: translatex(50%);
+     transform: translateY(25%);
      opacity: 0;
      transition: all 0.5s ease-in-out;
  }
  .intro-right-appear {
-     transform: translatex(0);
+     transform: translateY(0);
      opacity: 1;
  }
 
  /* head */
  .head-text-details {
-     transform: translate(0);
-     transform: scale(2);
+     transform: translatex(-25%);
     transition: all 0.5s ease;
+    opacity: 0;
 }
 .head-text-details-appear {
-    transform: scale(1);
+    transform: translateX(0);
+    opacity: 1;
 }
 .details-left {
-    transform: translatey(50%);
+    transform: translatex(-25%);
     z-index: -2;
+    transition-delay: 0.5s;
     transition: all 1s ease-in-out;
 }
 .details-left-appear {
     z-index: 1;
-    transform: translatey(0);
+    transform: translatex(0);
 }
 .details-right {
-    transform: translatey(50%);
+    transform: translatex(-25%);
     z-index: -2;
     transition-delay: 1s;
     transition: all 1.5s ease-in-out;
 }
 .details-right-appear {
-    transform: translatey(0);
+    transform: translatex(0);
     z-index: 1;
 }
 
 /* skills */
 .head-skills {
-    transform: scale(3);
-    transform-origin: left;
+    transform: translateY(25%);
     opacity: 0;
     transition: all 0.5s ease-in-out;
 }
 .head-skills-appear {
-    transform: scale(1);
+    transform: translateY(0);
     opacity: 1;
-    transform-origin: left;
 }
 .skills-left {
-    transform: translatey(50%) scale(0.1);
-    transform-origin: right;
+    transform: translatey(25%);
     opacity: 0;
     transition: all 0.5s ease-in-out;
 }
 .skills-left-appear {
-    transform: translatey(0) scale(1);
-    transform-origin: right;
+    transform: translatey(0);
     opacity: 1;
 }
 .skills-right {
-    transform: translatey(50%) scale(0.1);
-    transform-origin: left;
+    transform: translatey(25%);
     opacity: 0;
     transition: all 0.5s ease-in-out;
 }
 .skills-right-appear {
-    transform: translateY(0) scale(1);
-    transform-origin: right;
+    transform: translateY(0);
     opacity: 1;
 } 
 
@@ -272,11 +268,11 @@ progress[value]::-webkit-progress-value {
 
 /* contact */
 .contact-left {
-    transform: scale(2);
+    transform: translateY(25%);
     transition: all 1s ease;
 }
 .contact-left-appear {
-    transform: scale(1);
+    transform: translateY(0);
 }
 
 /* scroll line */
