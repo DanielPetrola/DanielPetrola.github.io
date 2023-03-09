@@ -125,3 +125,8 @@ const scrollline = document.querySelector('.scroll-line');
       };
 
       window.addEventListener('scroll', fillscrollline);
+
+//landing page 
+document.getElementById("landingPage").onclick = function () {
+  location.href = "/sampleLandingPage/index.html";
+};

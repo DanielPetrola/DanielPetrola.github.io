@@ -1,0 +1,217 @@
+html,
+body {
+  box-sizing: border-box;
+  height: 100%;
+  width: auto;
+  overflow-y: visible;
+  background-color: #6a6f70;
+  font-family: "Poppins", sans-serif;
+}
+.products, .partners, .about, .review, .contact {
+  background-color: rgba(255, 255, 255, 1);
+}
+#getStarted::before {
+  display: block;
+  content: "";
+  height: 60px;
+}
+.white {
+  color: #fff;
+  font-family: "Varela Round", sans-serif;
+}
+.body {
+  background-image: url(../img/team_work.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+}
+.nav {
+  color: #000;
+  font-weight: bold;
+  backdrop-filter: blur(0.4rem);
+  box-shadow: 1rem;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.nav-links:hover{
+  text-decoration: underline black;
+}
+.nav-menu {
+  width: max-content;
+}
+.logoSize {
+  width: 30%;
+  height: auto;
+}
+.page-header {
+  font-size: 1.25rem;
+  color: #fff;
+}
+.header-padding {
+  padding-top: 10rem;
+}
+.button {
+  border-radius: 1.3rem;
+}
+.button-glow:hover {
+  box-shadow: 0 5px 15px rgba(219, 159, 159, 0.726);
+  font-weight: bolder;
+}
+.card {
+  box-shadow: 0 5px 15px rgba(100, 67, 67, 0.726);
+}
+.card-all {
+  opacity: 0;
+  transform: translatey(50px);
+  transition: all 1s ease;
+}
+.card-appear {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.red-text {
+  color: #c60102;
+}
+.blck-text {
+  color: #000;
+}
+.card-1 {
+  border: 2px solid grey;
+  transition: all 0.5s ease;
+}
+.card-1:hover {
+  box-shadow: 0 5px 25px rgba(198, 1, 2, 0.726);
+}
+.card div img {
+  width: 90%;
+  transition: width 0.2s ease-out;
+}
+.card:hover div img {
+  width: 97%; 
+}
+.bg-black {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 69%,
+    rgba(255, 255, 255, 1) 69%
+  );
+}
+/* arrow animation */
+.arrowDownAnimated {
+  overflow: hidden;
+  width: 970px;
+  height: 300px;
+}
+.actionType3 span.arrowDown {
+  display: block;
+  padding-top: 131px;
+}
+.actionType3 span.arrowDown img {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+  animation: arrowDown 3s ease-out infinite;
+}
+@keyframes arrowDown {
+  0% {
+    transform: translatey(0);
+  }
+  20% {
+    transform: translatey(0);
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.7;
+  }
+  33% {
+    transform: translatey(22px);
+    opacity: 0.5;
+  }
+  75% {
+    transform: translatey(15px);
+  }
+  100% {
+    transform: translatey(0);
+  }
+}
+/* end of animation */
+
+.about-us {
+  opacity: 0;
+  transform: translatex(-50px);
+  transition: all 1s ease;
+}
+.about-us-img {
+  opacity: 0;
+  transform: translatex(50px);
+  transition: all 1s ease;
+}
+.about-appear {
+  opacity: 1;
+  transform: translateX(0px);
+}
+.test {  
+  position: relative;
+}
+.test1{
+  transform: translateX(-20%) translateY(-25%) rotateY(0deg);
+  position: absolute;
+  width: 40%;
+  left: 0%;
+  transition: all 0.4s ease-in-out;
+}
+.test2 {
+  transform: translateX(0%) translateY(-20%);
+  position: absolute;
+  width: 30%;
+  right: 0%;
+  transition: all 0.4s ease-in-out;
+}
+.test1-appear {
+  transform: translateX(-10%) translateY(-25%);
+  position: absolute;
+  left: 0%;
+  width: 50%;  
+  opacity: 1;
+  transition: all 1s ease-in-out;
+}
+.test2-appear {  
+  transform: translateX(0%) translateY(-20%);
+  position: absolute;
+  width: 40%;
+  right: 0%;
+  opacity: 1;
+  transition: all 1s ease-in-out;
+}
+.contact-form {
+  transform: translatex(-100%);
+  transition: all 1s ease-out;
+}
+.contact-form-appear {
+  transform: translateY(0%);
+}
+
+/* back to portfolio */
+.sticky{
+  position: fixed;
+  padding: 5px;
+  top: 0.5%;
+  left: 2.5%;
+  width: 100%;
+  z-index: 99999;
+  background: linear-gradient(90deg, rgba(255, 178, 36,.6), rgba(48, 56, 65,0) 70.71%);
+  transform: rotate(90deg);
+  transform-origin: top left;
+}
+.back-to-portfolio{
+  color: rgb(63, 56, 56);
+  font-size: large;
+  font-weight: bold;
+  text-decoration: none;
+}
+.back-to-portfolio:hover{
+  cursor: pointer;
+  color: #000;
+  font-size: larger;
+}
